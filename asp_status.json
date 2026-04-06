@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "description": "ASP案件承認状況ファイル（@money_memom23）",
+    "updated": "2026-04-06",
+    "instructions": "承認・否認があるたびに手動で更新してください。承認後はlit.linkへのリンク追加も忘れずに。"
+  },
+  "programs": [
+    {
+      "id": "prog-001",
+      "name": "楽天カード新規発行",
+      "asp": "もしもアフィリエイト",
+      "status": "pending",
+      "applied_at": "2026-04-05",
+      "approved_at": null,
+      "rejected_at": null,
+      "affiliate_url": null,
+      "litlink_added": false,
+      "reward_per_conversion": 8000,
+      "notes": "申請中"
+    },
+    {
+      "id": "prog-002",
+      "name": "SBI証券NISA口座開設",
+      "asp": "AFB",
+      "status": "pending",
+      "applied_at": "2026-04-05",
+      "approved_at": null,
+      "rejected_at": null,
+      "affiliate_url": null,
+      "litlink_added": false,
+      "reward_per_conversion": 5000,
+      "notes": "本人確認待ち"
+    },
+    {
+      "id": "prog-003",
+      "name": "楽天証券口座開設",
+      "asp": "",
+      "status": "not_applied",
+      "applied_at": null,
+      "approved_at": null,
+      "rejected_at": null,
+      "affiliate_url": null,
+      "litlink_added": false,
+      "reward_per_conversion": 5000,
+      "notes": "未申請"
+    },
+    {
+      "id": "prog-004",
+      "name": "マネーフォワードMEプレミアム",
+      "asp": "AFB",
+      "status": "pending",
+      "applied_at": "2026-04-05",
+      "approved_at": null,
+      "rejected_at": null,
+      "affiliate_url": null,
+      "litlink_added": false,
+      "reward_per_conversion": 2000,
+      "notes": "本人確認待ち"
+    },
+    {
+      "id": "prog-005",
+      "name": "クラウドワークス登録",
+      "asp": "A8.net",
+      "status": "pending",
+      "applied_at": "2026-04-05",
+      "approved_at": null,
+      "rejected_at": null,
+      "affiliate_url": null,
+      "litlink_added": false,
+      "reward_per_conversion": 1000,
+      "notes": "申請済み (S00000012521005)"
+    }
+  ],
+  "litlink_url": "https://lit.link/memoainisa",
+  "approval_checklist": [
+    "ASPマイページで承認メール確認",
+    "asp_status.json の status を 'approved' に変更",
+    "affiliate_url にリンクを記入",
+    "lit.link にリンクを追加",
+    "litlink_added を true に変更",
+    "posts.json の該当投稿の program_id を確認"
+  ]
+}

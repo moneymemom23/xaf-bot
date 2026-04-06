@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "description": "Xアフィリエイト KPI記録ファイル（@money_memom23）",
+    "updated": "2026-04-06",
+    "instructions": "毎週月曜日にX Analyticsから数値を確認して手動入力してください。xaf-analystがこのファイルを読んで分析します。"
+  },
+  "weekly": [
+    {
+      "week": "2026-W14",
+      "period": "2026-04-05 〜 2026-04-11",
+      "followers_start": 0,
+      "followers_end": null,
+      "impressions": null,
+      "profile_visits": null,
+      "link_clicks": null,
+      "likes": null,
+      "reposts": null,
+      "replies": null,
+      "posts_count": null,
+      "affiliate_clicks": {
+        "prog-001": null,
+        "prog-002": null,
+        "prog-003": null,
+        "prog-004": null,
+        "prog-005": null
+      },
+      "revenue_jpy": 0,
+      "notes": "アカウント開設週。post-001（4/5）・post-002（4/6朝）・post-002b（4/6夜）投稿済み"
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2026-04",
+      "followers_start": 0,
+      "followers_end": null,
+      "total_impressions": null,
+      "total_link_clicks": null,
+      "total_posts": null,
+      "affiliate_conversions": {
+        "prog-001": { "clicks": null, "conversions": null, "revenue_jpy": null },
+        "prog-002": { "clicks": null, "conversions": null, "revenue_jpy": null },
+        "prog-003": { "clicks": null, "conversions": null, "revenue_jpy": null },
+        "prog-004": { "clicks": null, "conversions": null, "revenue_jpy": null },
+        "prog-005": { "clicks": null, "conversions": null, "revenue_jpy": null }
+      },
+      "total_revenue_jpy": 0,
+      "phase": "Phase1",
+      "notes": "アカウント開設月"
+    }
+  ]
+}
