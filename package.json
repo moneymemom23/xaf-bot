@@ -1,0 +1,13 @@
+{
+  "name": "xaf-bot",
+  "version": "1.0.0",
+  "description": "X アフィリエイト自動投稿ボット",
+  "main": "post.js",
+  "scripts": {
+    "post": "node post.js",
+    "test": "node test_connection.js"
+  },
+  "dependencies": {
+    "twitter-api-v2": "^1.18.2"
+  }
+}
