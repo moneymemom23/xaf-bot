@@ -9,6 +9,7 @@
 const { TwitterApi } = require('twitter-api-v2');
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // ── 設定読み込み ──
 const configPath = path.join(__dirname, 'config.json');
@@ -94,6 +95,17 @@ async function main() {
     }
     fs.writeFileSync(postsPath, JSON.stringify(posts, null, 2), 'utf8');
     log(`SAVED: posts.json を更新しました`);
+
+    // posts.json を GitHub へ自動プッシュ
+    try {
+      execSync('git add posts.json && git commit -m "update: posts.json after post" && git push origin main', {
+        cwd: __dirname,
+        stdio: 'pipe',
+      });
+      log(`GIT: posts.json を GitHub へ push しました`);
+    } catch (gitErr) {
+      log(`GIT WARNING: push 失敗（投稿自体は成功） — ${gitErr.message}`);
+    }
 
   } catch (err) {
     log(`ERROR: 投稿失敗 — ${err.message || JSON.stringify(err)}`);
